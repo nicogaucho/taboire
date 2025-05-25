@@ -1,4 +1,3 @@
-import { Blockquote } from '@/components/Blockquote'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
@@ -8,11 +7,9 @@ import { List, ListItem } from '@/components/List'
 import { PageIntro } from '@/components/PageIntro'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import { TagList, TagListItem } from '@/components/TagList'
-import imageLaptop from '@/images/laptop.jpg'
-import imageMeeting from '@/images/meeting.jpg'
-import imageWhiteboard from '@/images/whiteboard.jpg'
-import imageSustainable from '@/images/sustainable.jpg'
+import imageClients from '@/images/clients.jpg'
+import imageConsultoria from '@/images/consultoria.jpg'
+import imageTerritorio from '@/images/territorio.jpg'
 
 function Section({ title, image, children }) {
   return (
@@ -44,31 +41,18 @@ function Section({ title, image, children }) {
   )
 }
 
-function Discover() {
+function ConsultoriaEstrategica() {
   return (
     <Section
-      title="Soluciones en Sostenibilidad y Circularidad"
-      image={{ src: imageWhiteboard }}
+      title="Consultoría estratégica en sostenibilidad"
+      image={{ src: imageConsultoria }}
     >
       <div className="space-y-6 text-base text-neutral-600">
         <p>
           Proporcionamos soluciones{' '}
           <strong className="font-semibold text-neutral-950">
             personalizadas
-          </strong>{' '}
-          and que promueven prácticas sostenibles.
-        </p>
-        <p>
-          Trabajamos estrechamente con nuestros clientes para diseñar
-          iniciativas innovadoras que cumplen con estándares de sostenibilidad y
-          normativas, mientras optimizamos recursos y mejoramos la{' '}
-          <strong className="font-semibold text-neutral-950">
-            eficiencia operativa
-          </strong>{' '}
-          Nuestro enfoque garantiza impactos medibles y duraderos
-        </p>
-        <p>
-          fortaleciendo la reputación corporativa y facilitando el camino hacia{' '}
+          </strong>{' '} que promueven prácticas sostenibles, fortaleciendo la reputación corporativa y facilitando el camino hacia{' '}
           <strong className="font-semibold text-neutral-950">futuro</strong>,
           aun más sostenible y rentable
         </p>
@@ -77,79 +61,69 @@ function Discover() {
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
         Parte del proceso
       </h3>
-      <TagList className="mt-4">
-        <TagListItem>Personalización</TagListItem>
-        <TagListItem>Innovación</TagListItem>
-        <TagListItem>Garantía</TagListItem>
-        <TagListItem>Employee surveys</TagListItem>
-        <TagListItem>Proofs-of-concept</TagListItem>
-        <TagListItem>Forensic audit</TagListItem>
-      </TagList>
+      <List className="mt-8">
+        <ListItem title="Elaboración de planes y memorias de sostenibilidad">
+          Desarrollo de documentos que reflejan el compromiso ambiental, social y ético de la organización.
+        </ListItem>
+        <ListItem title="Integración de los ODS, estándares internacionales y marcos normativos">
+          Mapeo de objetivos empresariales con los ODS, alineación con ISO 26000, Pacto Mundial y normativa europea vigente.
+        </ListItem>
+        <ListItem title="Aplicación de economía circular en organizaciones">
+          Diagnóstico de flujos de materiales, rediseño de procesos para la reutilización y reducción de residuos.
+        </ListItem>
+        <ListItem title="Diseño de planes de transición ecológica">
+          Evaluación de impacto ambiental actual y definición de estrategias para descarbonización, eficiencia energética y energías renovables.
+        </ListItem>
+      </List>
     </Section>
   )
 }
 
-function Build() {
+function Eventos() {
   return (
     <Section
-      title="Asesoría Empresarial en Sostenibilidad"
-      image={{ src: imageSustainable, shape: 0 }}
+      title="Eventos sostenibles"
+      image={{ src: imageClients, shape: 0 }}
     >
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Ofrecemos asesoría especializada en sostenibilidad empresarial para
-          ayudar a las organizaciones a integrar prácticas responsables en sus
-          operaciones y estrategias.
-        </p>
-        <p>
-          Nuestros servicios abarcan desde el diagnóstico inicial hasta la
-          elaboración y seguimiento de planes de sostenibilidad, desarrollo de
-          estrategias de reducción de impacto, obtención de financiación,
-          cumplimiento normativo y obtención de certificaciones sostenibles.
-        </p>
-        <p>
-          Estamos en constante colaboración con nuestros clientes para optimizar
-          sus procesos, mejorar la eficiencia operativa y gestionar de manera
-          efectiva sus recursos, asegurando un camino claro hacia la
-          sostenibilidad y el logro de objetivos empresariales y ambientales.
+          Ofrecemos consultoría especializada para organizar <strong className="font-semibold text-neutral-950">
+            eventos sostenibles
+          </strong>{' '}, reduciendo el impacto ambiental y mejorando la imagen corporativa ante el público y las instituciones.
         </p>
       </div>
-
-      {/*       <Blockquote
-        author={{ name: 'Debra Fiscal', role: 'CEO of Unseal' }}
-        className="mt-12"
-      >
-        Studio were so regular with their progress updates we almost began to
-        think they were automated!
-      </Blockquote> */}
+      <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
+        Parte del proceso
+      </h3>
+      <List className="mt-8">
+        <ListItem title="Planes y memorias de sostenibilidad para eventos culturales o institucionales">
+          Redactamos informes de sostenibilidad que comunican el compromiso ambiental y social del evento.
+        </ListItem>
+        <ListItem title="Ecoauditorías ambientales durante la producción">
+          Realizamos auditorías in situ para medir y minimizar el impacto ambiental del evento en tiempo real.
+        </ListItem>
+        <ListItem title="Planes ambientales para festivales y muestras">
+          Diseñamos estrategias sostenibles para festivales, ferias y muestras, alineadas con buenas prácticas ecológicas
+        </ListItem>
+        <ListItem title="Asesoría para procesos de subvenciones vinculadas">
+          Ayudamos a identificar y gestionar subvenciones públicas para eventos responsables con el medio ambiente.
+        </ListItem>
+      </List>
     </Section>
   )
 }
 
-function Deliver() {
+function ProyectosTerritoriales() {
   return (
     <Section
-      title="Ideación y Elaboración de Proyectos"
-      image={{ src: imageMeeting, shape: 2 }}
+      title="Proyectos territoriales e innovación social"
+      image={{ src: imageTerritorio, shape: 2 }}
     >
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Ofrecemos un servicio integral de Ideación y Elaboración de Proyectos,
-          diseñados para{' '}
-          <strong className="font-semibold text-neutral-950">ayudar</strong>
-          .a las empresas a desarrollar iniciativas sostenibles desde cero.
-        </p>
-        <p>
-          We ensure that the main pages of the site are{' '}
-          <strong className="font-semibold text-neutral-950">
-            fully functional
-          </strong>{' '}
-          at launch — the auxiliary pages will, of course, be lorem ipusm shells
-          which get updated as part of our exorbitant{' '}
-          <strong className="font-semibold text-neutral-950">
-            maintenance
-          </strong>{' '}
-          retainer.
+          Desarrollamos proyectos de <strong className="font-semibold text-neutral-950">
+            sostenibilidad territorial
+          </strong>{' '} e innovación social que promueven el desarrollo local, la inclusión y el cuidado del entorno.
         </p>
       </div>
 
@@ -157,25 +131,17 @@ function Deliver() {
         Parte del proceso a incluir
       </h3>
       <List className="mt-8">
-        <ListItem title="Generación de Ideas">
-          Nuestro enfoque incluye todas las etapas del ciclo de vida del
-          proyecto, asegurando que cada idea se convierta en una realidad
-          práctica y efectiva.
+        <ListItem title="Estrategias de economía local y regeneración insular">
+          Creamos planes de revitalización económica sostenible en contextos insulares y rurales
         </ListItem>
-        <ListItem title="Evaluación y Selección">
-          Nuestro enfoque incluye todas las etapas del ciclo de vida del
-          proyecto, asegurando que cada idea se convierta en una realidad
-          práctica y efectiva.
+        <ListItem title="Programas de educación ambiental y participación comunitaria">
+           Diseñamos actividades educativas y participativas para fomentar la conciencia ecológica en la comunidad
         </ListItem>
-        <ListItem title="Diseño del Proyecto">
-          Nuestro enfoque incluye todas las etapas del ciclo de vida del
-          proyecto, asegurando que cada idea se convierta en una realidad
-          práctica y efectiva.
+        <ListItem title="Proyectos de carácter social en contextos vulnerables">
+          Impulsamos iniciativas sostenibles con impacto positivo en grupos sociales en riesgo de exclusión
         </ListItem>
-        <ListItem title=" Implementación y Seguimiento">
-          Nuestro enfoque incluye todas las etapas del ciclo de vida del
-          proyecto, asegurando que cada idea se convierta en una realidad
-          práctica y efectiva.
+        <ListItem title="Aplicación de principios de economía circular a escala local">
+          Implementamos soluciones circulares que optimizan recursos y reducen residuos en entornos locales
         </ListItem>
       </List>
     </Section>
@@ -193,40 +159,41 @@ function Values() {
       </div>
 
       <SectionIntro
-        eyebrow="Nuestros Valores"
-        title="Resolver los desafíos de sostenibilidad"
+        eyebrow="Servicios adicionales"
+        title="Sostenibilidad climática, financiación verde y formación ambiental"
       >
         <p>
-          Ser el motor que impulsa la transformación sostenible en Lanzarote,
-          colaborando con organizaciones de todos los sectores para diseñar e
-          implementar soluciones innovadoras que no solo optimicen sus recursos
-          y reduzcan su impacto ambiental, sino que también generen un cambio
-          profundo en la comunidad y el entorno.
+          Amplía tu impacto con servicios complementarios: medición de huella de carbono, acceso a subvenciones verdes y formación en sostenibilidad.
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
-          <GridListItem title="Compromiso">
-            Ser el motor que impulsa la transformación sostenible en Lanzarote,
-            colaborando con organizaciones de todos los sectores para diseñar e
-            implementar soluciones innovadoras que no solo optimicen sus
-            recursos y reduzcan su impacto ambiental, sino que también generen
-            un cambio profundo en la comunidad y el entorno.
+          <GridListItem title="Medición de la Huella de Carbono y Planes de Descarbonización">
+          <ul className='list-disc'>
+            <li>
+              Cálculo de la huella de carbono organizacional o por evento: Medimos las emisiones de gases de efecto invernadero de forma precisa y personalizada.
+            </li>
+            <li>Análisis de emisiones directas e indirectas (Alcances 1, 2 y 3): Evaluamos todas las fuentes de emisión según los estándares internacionales.</li>
+            <li>Diseño de planes realistas y progresivos de descarbonización: Elaboramos estrategias de reducción de emisiones adaptadas a tus recursos y objetivos.</li>
+            <li>Comunicación de resultados, medidas correctoras y seguimiento: Ofrecemos informes claros, planes de mejora y sistemas de seguimiento continuo.</li>
+          </ul>
           </GridListItem>
-          <GridListItem title="Transparencia">
-            Ser el motor que impulsa la transformación sostenible en Lanzarote,
-            colaborando con organizaciones de todos los sectores para diseñar e
-            implementar soluciones innovadoras que no solo optimicen sus
-            recursos y reduzcan su impacto ambiental, sino que también generen
-            un cambio profundo en la comunidad y el entorno.
+          <GridListItem title="Asesoría para subvenciones">
+            <ul className="list-disc">
+              <li>Te asesoramos para acceder a ayudas y subvenciones públicas en sostenibilidad, mejorando la viabilidad y el impacto de tus proyectos.</li>
+              <li>Búsqueda activa de convocatorias adaptadas a tu proyecto: Identificamos subvenciones compatibles con tus objetivos ambientales y sociales.</li>
+              <li>Revisión de criterios de elegibilidad y viabilidad: Verificamos requisitos clave para asegurar una postulación exitosa.</li>
+              <li>Redacción y acompañamiento técnico para presentar propuestas sólidas: Elaboramos propuestas bien fundamentadas para maximizar las posibilidades de financiación.</li>
+            </ul>
           </GridListItem>
-          <GridListItem title="Innovación">
-            Ser el motor que impulsa la transformación sostenible en Lanzarote,
-            colaborando con organizaciones de todos los sectores para diseñar e
-            implementar soluciones innovadoras que no solo optimicen sus
-            recursos y reduzcan su impacto ambiental, sino que también generen
-            un cambio profundo en la comunidad y el entorno.
+          <GridListItem title="Formación y divulgación">
+            <ul className="list-disc">
+              <li>Ofrecemos formación en sostenibilidad y campañas de sensibilización con impacto real, combinando rigor técnico y creatividad comunicativa.</li>
+              <li>Talleres prácticos, jornadas divulgativas y píldoras formativas: Facilitamos actividades educativas adaptadas a distintos públicos y sectores.</li>
+              <li>Contenidos editoriales, visuales y digitales con rigor y creatividad: Creamos materiales de comunicación sostenibles y atractivos para entornos digitales y presenciales.</li>
+              <li>Campañas de sensibilización con impacto real: Diseñamos campañas efectivas que generan conciencia ambiental y movilización social.</li>
+            </ul>
           </GridListItem>
         </GridList>
       </Container>
@@ -243,17 +210,16 @@ export const metadata = {
 export default function Process() {
   return (
     <>
-      <PageIntro eyebrow="Que ofrecemos" title="Nuestros servicios">
+      <PageIntro eyebrow="Servicios" title="Taboire Soluciones Sostenibles">
         <p>
-        En Taboire, nos especializamos en resolver los desafíos de
-        sostenibilidad de nuestros clientes mediante soluciones personalizadas y sostenibles.
+        Diseñamos soluciones reales para impulsar la sostenibilidad desde distintos ángulos. En Taboire trabajamos a medida, adaptándonos al contexto, escala y necesidades de cada proyecto. Integramos lo técnico, lo normativo y lo creativo para que las ideas no se queden en el papel
         </p>
       </PageIntro>
 
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
-        <Discover />
-        <Build />
-        <Deliver />
+        <ConsultoriaEstrategica />
+        <Eventos />
+        <ProyectosTerritoriales />
       </div>
 
       <Values />

@@ -49,13 +49,13 @@ export default async function CaseStudyLayout({ caseStudy, children }) {
 
             <div className="border-y border-neutral-200 bg-neutral-100">
               <div className="mx-auto -my-px max-w-[76rem] bg-neutral-200">
-                <GrayscaleTransitionImage
+                {/* <GrayscaleTransitionImage
                   {...caseStudy.image}
                   quality={90}
                   className="w-full"
                   sizes="(min-width: 1216px) 76rem, 100vw"
                   priority
-                />
+                /> */}
               </div>
             </div>
           </FadeIn>

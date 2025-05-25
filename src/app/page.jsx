@@ -9,8 +9,7 @@ import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import { Button } from '@/components/Button'
 import logoTaboire from '@/images/logo/logo.png'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-import whiteboard from '@/images/whiteboard.jpg'
+import imageMeeting from '@/images/meeting.jpg'
 import logoInnavacion from '@/images/icons/sustainability.png'
 import logoAsesoramiento from '@/images/icons/consultoria.png'
 import logoFormacion from '@/images/icons/formacion.png'
@@ -134,7 +133,7 @@ function Services() {
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
-                src={whiteboard}
+                src={imageMeeting}
                 sizes="(min-width: 1024px) 41rem, 31rem"
                 className="justify-center lg:justify-end"
               />
@@ -142,23 +141,27 @@ function Services() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Sostenibilidad y Circularidad">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+
+          Proporcionamos soluciones{' '}
+          <strong className="font-semibold text-neutral-950">
+            personalizadas
+          </strong>{' '} que promueven prácticas sostenibles, fortaleciendo la reputación corporativa y facilitando el camino hacia{' '}
+          <strong className="font-semibold text-neutral-950">futuro</strong>,
+          aun más sostenible y rentable
+
             </ListItem>
             <ListItem title="Asesoría Empresarial en Sostenibilidad">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+              Ofrecemos consultoría especializada para organizar <strong className="font-semibold text-neutral-950">
+            eventos sostenibles
+          </strong>{' '}, reduciendo el impacto ambiental y mejorando la imagen corporativa ante el público y las instituciones.
             </ListItem>
             <ListItem title="Informes y Memorias de Sostenibilidad">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+              Desarrollamos proyectos de <strong className="font-semibold text-neutral-950">
+            sostenibilidad territorial
+          </strong>{' '} e innovación social que promueven el desarrollo local, la inclusión y el cuidado del entorno.
             </ListItem>
             <ListItem title="Huella de Carbono y Descarbonización">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+              Cálculo de la huella de carbono organizacional o por evento: Medimos las emisiones de gases de efecto invernadero de forma precisa y personalizada.
               <div className="lg:flex lg:items-center lg:justify-end">
                 <Button href="/contact" className="mt-8" invert={invert}>
                   Nuestros Servicios

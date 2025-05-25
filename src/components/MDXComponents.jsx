@@ -10,22 +10,22 @@ export const MDXComponents = {
   Blockquote({ className, ...props }) {
     return <Blockquote className={clsx('my-32', className)} {...props} />
   },
-  img: function Img({ className, ...props }) {
-    return (
-      <div
-        className={clsx(
-          'group isolate my-10 overflow-hidden rounded-4xl bg-neutral-100 max-sm:-mx-6',
-          className,
-        )}
-      >
-        <GrayscaleTransitionImage
-          {...props}
-          sizes="(min-width: 768px) 42rem, 100vw"
-          className="aspect-16/10 w-full object-cover"
-        />
-      </div>
-    )
-  },
+  // img: function Img({ className, ...props }) {
+  //   return (
+  //     <div
+  //       className={clsx(
+  //         'group isolate my-10 overflow-hidden rounded-4xl bg-neutral-100 max-sm:-mx-6',
+  //         className,
+  //       )}
+  //     >
+  //       <GrayscaleTransitionImage
+  //         {...props}
+  //         sizes="(min-width: 768px) 42rem, 100vw"
+  //         className="aspect-16/10 w-full object-cover"
+  //       />
+  //     </div>
+  //   )
+  // },
   StatList({ className, ...props }) {
     return (
       <StatList className={clsx('my-32 max-w-none!', className)} {...props} />

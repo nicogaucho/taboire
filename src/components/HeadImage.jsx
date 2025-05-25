@@ -1,19 +1,22 @@
 'use client'
 import Image from 'next/image'
-import palm from '@/images/palm.jpg'
+import land from '@/images/land.jpg'
 import meeting from '@/images/meeting.jpg'
-import whiteboard from '@/images/whiteboard.jpg'
-import servicios from "@/images/servicios.jpg";
-import { usePathname } from 'next/navigation';
+import contactos from '@/images/contactos.jpg'
+import build from '@/images/build.jpg'
+import servicios from "@/images/servicios.jpg"
+import { usePathname } from 'next/navigation'
 
 export function HeadImage() {
   let pathname = usePathname()
   if (pathname == "/") {
-    return <Image alt="" src={palm} />
+    return <Image alt="" src={land} />
   } else if (pathname == "/about") {
     return <Image alt="" src={meeting} />
   } else if (pathname == "/contact") {
-    return <Image alt="" src={whiteboard} />
+    return <Image alt="" src={contactos} />
+  } else if (pathname == "/process") {
+    return <Image alt="" src={build} />
   } else {
     return <Image alt="" src={servicios} />
   }
