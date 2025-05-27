@@ -18,7 +18,6 @@ const navigation = [
   {
     title: 'Informaciones',
     links: [
-      { title: 'Aviso legal', href: '/about' },
       { title: 'Pólitica de cookies', href: '/process' },
       { title: 'Pólitica de privacidad', href: '/blog' },
       { title: 'Derechos', href: '/contact' },
@@ -121,7 +120,7 @@ export function Footer() {
             />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Taboire SL. {new Date().getFullYear()}
+            Powered by © Digital Consulting Agüita SL.
           </p>
         </div>
       </FadeIn>
