@@ -9,11 +9,11 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
-import LogoCanarias from '@/images/clients/canarias/logo-gobierno.svg'
-import LogoEffiwaste from '@/images/clients/effiwaste/logo-effiwaste.svg'
-import LogoArrecifeNatura from '@/images/clients/logo-natura/Logo-Arrecife-Natura.svg'
-import LogoJardinBotanico from '@/images/clients/jardin-botanico/logo-botanico.svg'
-import LogoProexca from '@/images/clients/proexca/proexca.svg'
+import LogoCanarias from '@/images/clients/canarias/logo-gobierno-full.svg'
+import LogoEffiwaste from '@/images/clients/effiwaste/logo-effiwaste-full.svg'
+import LogoArrecifeNatura from '@/images/clients/logo-natura/logo-arrecife-full.svg'
+import LogoJardinBotanico from '@/images/clients/jardin-botanico/logo-botanico-full.svg'
+import LogoProexca from '@/images/clients/proexca/logo-proexca-full.svg'
 import { formatDate } from '@/lib/formatDate'
 import { loadCaseStudies } from '@/lib/mdx'
 import logoTaboire from '@/images/logo/logo.png'
@@ -115,7 +115,7 @@ function Clients() {
             <li key={client} className="group">
               <FadeIn className="overflow-hidden">
                 <Border className="pt-12 group-nth-[-n+2]:-mt-px sm:group-nth-3:-mt-px lg:group-nth-4:-mt-px">
-                  <Image src={logo} alt={client} unoptimizedn style={{ width: '200px', height: '150px' }} />
+                  <Image src={logo} alt={client} unoptimizedn style={{ width: '230px', height: '100px' }} />
                 </Border>
               </FadeIn>
             </li>

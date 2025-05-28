@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import logo from '@/images/logo/logo.png'
+import logoProexcaFull from "@/images/clients/proexca/logo-proexca-full.svg";
 import { socialMediaProfiles } from '@/components/SocialMedia'
 
 const navigation = [
@@ -70,36 +71,36 @@ function ArrowIcon(props) {
   )
 }
 
-function NewsletterForm() {
-  return (
-    <form className="max-w-sm">
-      <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-        Pide más informaciones
-      </h2>
-      <p className="mt-4 text-sm text-neutral-700">
-      Si deseas realizarnos una consulta, no dudes en ponerte en contacto con nosotros. Será un placer atenderte.
-      </p>
-      <div className="relative mt-6">
-        <input
-          type="email"
-          placeholder="Correo electronico"
-          autoComplete="email"
-          aria-label="Email address"
-          className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pr-20 pl-6 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:ring-neutral-950/5 focus:outline-hidden"
-        />
-        <div className="absolute inset-y-1 right-1 flex justify-end">
-          <button
-            type="submit"
-            aria-label="Submit"
-            className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800"
-          >
-            <ArrowIcon className="w-4" />
-          </button>
-        </div>
-      </div>
-    </form>
-  )
-}
+// function NewsletterForm() {
+//   return (
+//     <form className="max-w-sm">
+//       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
+//         Pide más informaciones
+//       </h2>
+//       <p className="mt-4 text-sm text-neutral-700">
+//       Si deseas realizarnos una consulta, no dudes en ponerte en contacto con nosotros. Será un placer atenderte.
+//       </p>
+//       <div className="relative mt-6">
+//         <input
+//           type="email"
+//           placeholder="Correo electronico"
+//           autoComplete="email"
+//           aria-label="Email address"
+//           className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pr-20 pl-6 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:ring-neutral-950/5 focus:outline-hidden"
+//         />
+//         <div className="absolute inset-y-1 right-1 flex justify-end">
+//           <button
+//             type="submit"
+//             aria-label="Submit"
+//             className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800"
+//           >
+//             <ArrowIcon className="w-4" />
+//           </button>
+//         </div>
+//       </div>
+//     </form>
+//   )
+// }
 
 export function Footer() {
   return (
@@ -107,11 +108,19 @@ export function Footer() {
       <FadeIn>
         <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
           <Navigation />
-          <div className="flex lg:justify-end">
-            <NewsletterForm />
+          <div className="">
+            <div className="font-display text-sm font-semibold tracking-wider text-neutral-950 text-end mb-8">
+              Patrocinado por :
+            </div>
+            <Image
+              alt=""
+              src={logoProexcaFull}
+              width={280}
+              className='ml-auto'
+            />  
           </div>
         </div>
-        <div className="mt-24 mb-20 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
+        <div className="mt-24 mb-20 flex flex-wrap items-end  justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
           <Link href="/" aria-label="Home">
             <Image
               alt=""
