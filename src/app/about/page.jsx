@@ -194,9 +194,9 @@ function Team() {
 }
 
 export const metadata = {
-  title: 'About Us',
+  title: 'Sobre nostros',
   description:
-    'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
+    'En Taboire Soluciones Sostenibles acompañamos a administraciones, empresas y entidades sociales en el diseño, desarrollo y ejecución de proyectos sostenibles, con una visión práctica, ambiciosa y medible.',
 }
 
 export default async function About() {

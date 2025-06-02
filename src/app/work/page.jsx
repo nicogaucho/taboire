@@ -127,9 +127,9 @@ function Clients() {
 }
 
 export const metadata = {
-  title: 'Our Work',
+  title: 'Proyectos',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'En Taboire trabajamos en proyectos sostenibles que transforman residuos en recursos, impulsan la economía circular y promueven la inclusión social',
 }
 
 export default async function Work() {

@@ -69,8 +69,8 @@ function ContactDetails() {
 }
 
 export const metadata = {
-  title: 'Contact Us',
-  description: 'Let’s work together. We can’t wait to hear from you.',
+  title: 'Contactos',
+  description: 'Contacta con nosotros y trabajemos juntos. No podemos esperar a escuchar de ti.',
 }
 
 export default function Contact() {

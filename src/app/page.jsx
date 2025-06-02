@@ -177,7 +177,7 @@ function Services() {
 
 export const metadata = {
   description:
-    'We are a development studio working at the intersection of design and technology.',
+    'Taboire Soluciones Sostenibles es una empresa multidisciplinar con experiencia en: Estrategia y sostenibilidad Innovación social y economía circular Territorio, biodiversidad y comunicación. Actuamos desde Lanzarote con una fuerte vocación insular, pero siempre con la mirada puesta en los grandes retos globales.',
 }
 
 export default async function Home() {

@@ -202,9 +202,9 @@ function Values() {
 }
 
 export const metadata = {
-  title: 'Our Process',
+  title: 'Servicios',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'En Taboire ofrecemos servicios a medida, adaptándonos al contexto, escala y necesidades de cada proyecto.',
 }
 
 export default function Process() {
