@@ -47,7 +47,7 @@ function ConsultoriaEstrategica() {
       title="Consultoría estratégica en sostenibilidad"
       image={{ src: imageConsultoria }}
     >
-      <div className="space-y-6 text-base text-neutral-600">
+      <div className="space-y-6 text-base text-neutral-950">
         <p>
           Proporcionamos soluciones{' '}
           <strong className="font-semibold text-neutral-950">
@@ -69,10 +69,7 @@ function ConsultoriaEstrategica() {
           Mapeo de objetivos empresariales con los ODS, alineación con ISO 26000, Pacto Mundial y normativa europea vigente.
         </ListItem>
         <ListItem title="Aplicación de economía circular en organizaciones">
-          Diagnóstico de flujos de materiales, rediseño de procesos para la reutilización y reducción de residuos.
-        </ListItem>
-        <ListItem title="Diseño de planes de transición ecológica">
-          Evaluación de impacto ambiental actual y definición de estrategias para descarbonización, eficiencia energética y energías renovables.
+          Diagnóstico de flujos de materiales, rediseño de procesos para optimización de recursos
         </ListItem>
       </List>
     </Section>
@@ -97,13 +94,10 @@ function Eventos() {
       </h3>
       <List className="mt-8">
         <ListItem title="Planes y memorias de sostenibilidad para eventos culturales o institucionales">
-          Redactamos informes de sostenibilidad que comunican el compromiso ambiental y social del evento.
+          Redactamos informes de sostenibilidad que comunican el compromiso ambiental y social del evento. Diseñamos estrategias sostenibles para festivales, ferias y muestras, alineadas con buenas prácticas ecológicas
         </ListItem>
         <ListItem title="Ecoauditorías ambientales durante la producción">
           Realizamos auditorías in situ para medir y minimizar el impacto ambiental del evento en tiempo real.
-        </ListItem>
-        <ListItem title="Planes ambientales para festivales y muestras">
-          Diseñamos estrategias sostenibles para festivales, ferias y muestras, alineadas con buenas prácticas ecológicas
         </ListItem>
         <ListItem title="Asesoría para procesos de subvenciones vinculadas">
           Ayudamos a identificar y gestionar subvenciones públicas para eventos responsables con el medio ambiente.

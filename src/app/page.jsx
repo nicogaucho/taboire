@@ -81,10 +81,10 @@ function CaseStudies({ enfoques }) {
   return (
     <>
       <SectionIntro title="Nuestro enfoque" className="mt-24 sm:mt-32 lg:mt-40">
-        <p>
+        {/* <p>
           En Taboire, nos apasiona lo que hacemos y estamos comprometidos en
           liderar el camino hacia un futuro más sostenible y circular.
-        </p>
+        </p> */}
       </SectionIntro>
       <Container className="mt-16">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -92,7 +92,7 @@ function CaseStudies({ enfoques }) {
             <FadeIn key={i} className="flex">
               <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
                 <h3>
-                  <Link href={'#'}>
+                  <Link href={'/process'}>
                     <span className="absolute inset-0 rounded-3xl" />
                     <Image src={enfoque.logo} alt="" width={45} unoptimized />
                   </Link>
@@ -125,7 +125,6 @@ function Services() {
         <p>
           En Taboire nos especializamos en resolver los desafíos de
           sostenibilidad de nuestros clientes mediante soluciones personalizadas
-          y sostenibles.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -141,29 +140,35 @@ function Services() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Sostenibilidad y Circularidad">
-
-          Proporcionamos soluciones{' '}
-          <strong className="font-semibold text-neutral-950">
-            personalizadas
-          </strong>{' '} que promueven prácticas sostenibles, fortaleciendo la reputación corporativa y facilitando el camino hacia{' '}
-          <strong className="font-semibold text-neutral-950">futuro</strong>,
-          aun más sostenible y rentable
-
+              Proporcionamos soluciones{' '}
+              <strong className="font-semibold text-neutral-950">
+                personalizadas
+              </strong>{' '}
+              que promueven prácticas sostenibles, fortaleciendo la reputación
+              corporativa y facilitando el camino hacia{' '}
+              <strong className="font-semibold text-neutral-950">futuro</strong>
+              , aún más sostenible y rentable
             </ListItem>
             <ListItem title="Asesoría Empresarial en Sostenibilidad">
-              Ofrecemos consultoría especializada para organizar <strong className="font-semibold text-neutral-950">
-            eventos sostenibles
-          </strong>{' '}, reduciendo el impacto ambiental y mejorando la imagen corporativa ante el público y las instituciones.
+              Acompañamos a empresas en su camino hacia ,{' '}
+              <strong className="font-semibold text-neutral-950">
+                modelos más sostenibles
+              </strong>{' '}
+              ,eficientes y alineados con la legislación y los valores del mercado actual. Desde el diagnóstico inicial hasta la implementación de estrategias, ayudamos a integrar la sostenibilidad en todas las áreas del negocio: gobernanza, operaciones, cadena de valor, comunicación e impacto ambiental y social.
             </ListItem>
             <ListItem title="Informes y Memorias de Sostenibilidad">
-              Desarrollamos proyectos de <strong className="font-semibold text-neutral-950">
-            sostenibilidad territorial
-          </strong>{' '} e innovación social que promueven el desarrollo local, la inclusión y el cuidado del entorno.
+              Elaboramos{' '}
+              <strong className="font-semibold text-neutral-950">
+                informes y memorias de sostenibilidad
+              </strong>{' '}
+              que reflejan de forma rigurosa, transparente y alineada con los principales estándares internacionales el compromiso y desempeño ambiental, social y económico de tu organización.
             </ListItem>
             <ListItem title="Huella de Carbono y Descarbonización">
-              Cálculo de la huella de carbono organizacional o por evento: Medimos las emisiones de gases de efecto invernadero de forma precisa y personalizada.
+              Cálculo de la huella de carbono organizacional o por evento:
+              Medimos las emisiones de gases de efecto invernadero de forma
+              precisa y personalizada.
               <div className="lg:flex lg:items-center lg:justify-end">
-                <Button href="/contact" className="mt-8" invert={invert}>
+                <Button href="/process" className="mt-8" invert={invert}>
                   Nuestros Servicios
                 </Button>
               </div>
@@ -212,10 +217,10 @@ export default async function Home() {
             Transformamos ideas en acciones para un mundo mejor
           </h1>
           <p className="mt-6 text-xl text-gray-800">
-            En Taboire creemos en un futuro donde la sostenibilidad y la
-            circularidad son el corazón de todas las decisiones.
+            En Taboire creemos en un futuro donde la sostenibilidad es el
+            corazón de todas las decisiones.
           </p>
-          <Button href="/contact" className="mt-6" invert={invert}>
+          <Button href="/process" className="mt-6" invert={invert}>
             Descubrir más
           </Button>
         </FadeIn>
@@ -230,8 +235,7 @@ export default async function Home() {
         client={{ name: 'Taboire', logo: logoTaboire }}
       >
         En Taboire, nos apasiona lo que hacemos y estamos comprometidos en
-        liderar el camino hacia un futuro más sostenible y circular. Juntos,
-        podemos transformar ideas en acciones y construir un mundo mejor.
+        liderar el camino hacia un futuro regenerativo
       </Testimonial>
 
       <Services />

@@ -4,7 +4,7 @@ import land from '@/images/land.jpg'
 import one from '@/images/1.jpg'
 import contactos from '@/images/contactos.jpg'
 import four from '@/images/4.jpg'
-import servicios from "@/images/servicios.jpg"
+import sea from "@/images/sea.jpg"
 import { usePathname } from 'next/navigation'
 
 export function HeadImage() {
@@ -12,13 +12,13 @@ export function HeadImage() {
   if (pathname == "/") {
     return <Image alt="" src={land} />
   } else if (pathname == "/about") {
-    return <Image alt="" src={one} />
-  } else if (pathname == "/contact") {
     return <Image alt="" src={contactos} />
+  } else if (pathname == "/contact") {
+    return <Image alt="" src={sea} />
   } else if (pathname == "/process") {
     return <Image alt="" src={four} />
   } else {
-    return <Image alt="" src={servicios} />
+    return <Image alt="" src={one} />
   }
 }
 

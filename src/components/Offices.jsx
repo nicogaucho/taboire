@@ -21,10 +21,8 @@ export function Offices({ invert = false, ...props }) {
   return (
     <ul role="list" {...props}>
       <li>
-        <Office name="Telde" invert={invert}>
-          Aldea de Telde
-          <br />
-          30120 Le GranCanarie
+        <Office name="Arrecife" invert={invert}>
+          35500 Lanzarote
         </Office>
       </li>
     </ul>

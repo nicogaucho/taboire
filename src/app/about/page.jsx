@@ -14,6 +14,7 @@ import { SectionIntro } from '@/components/SectionIntro'
 // import { StatList, StatListItem } from '@/components/StatList'
 import imagePaula from '@/images/team/paula.PNG'
 import imageCarlos from '@/images/team/Carlos.jpg'
+import { Clients } from '../work/page'
 
 
 function Culture() {
@@ -58,7 +59,7 @@ const team = [
     people: [
       {
         name: 'Paula Gomes Souza',
-        role: 'Fundadora y Directora',
+        role: 'Co-fundador',
         description: 'Oceanógrafa de formación, postgraduada en Gestión de Proyectos y Máster en Economía Circular y Desarrollo Sostenible. Su trayectoria internacional y su compromiso con la sostenibilidad la llevaron a establecerse en Lanzarote en busca de una vida más equilibrada, conectada con el territorio.',
         subDescription: 'Apasionada por las acciones de triple impacto, acompaña a administraciones, empresas y organizaciones para alcanzar los más altos estándares de sostenibilidad, asegurando que cada proyecto genere un impacto positivo y duradero.',
         image: { src: imagePaula },
@@ -69,7 +70,7 @@ const team = [
         name: 'Carlos Armas Rodríguez',
         role: 'Co-fundador',
         description: 'Carlos es, ante todo, conejero. Su vínculo con Lanzarote va más allá de lo profesional: es parte de su identidad. Licenciado en Veterinaria y empresario local, lleva años impulsando proyectos que apuestan por el desarrollo sostenible insular.',
-        subDescription: 'Ornitólogo, promotor ganadero, defensor de la biodiversidad endémica y enamorado de las tradiciones, Carlos aporta a Taboire una mirada práctica, territorial y profundamente comprometida con el equilibrio entre naturaleza, cultura y economía.',
+        subDescription: 'Ornitólogo, defensor de la biodiversidad endémica y enamorado de las tradiciones, Carlos aporta a Taboire una mirada práctica, territorial y profundamente comprometida con el equilibrio entre naturaleza, cultura y economía.',
         image: { src: imageCarlos },
         linkedin: 'https://www.linkedin.com/in/paulagmessostenibilidad/',
         phone: '+34 659 86 99 43'
@@ -232,12 +233,15 @@ export default async function About() {
 
       <Culture />
 
-      <PageLinks
+      {/* <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
         title="Desde el Blog"
         intro="Ayudamos a reducir el impacto ambiental, cumplir con normativas y certificaciones clave, y optimizar recursos para mejorar la eficiencia operativa y reducir costos."
         pages={blogArticles}
-      />
+      /> */}
+
+      <Clients />
+
       <ContactSection />
     </>
   )

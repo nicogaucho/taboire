@@ -13,7 +13,12 @@ import LogoCanarias from '@/images/clients/canarias/logo-gobierno-full.svg'
 import LogoEffiwaste from '@/images/clients/effiwaste/logo-effiwaste-full.svg'
 import LogoArrecifeNatura from '@/images/clients/logo-natura/logo-arrecife-full.svg'
 import LogoJardinBotanico from '@/images/clients/jardin-botanico/logo-botanico-full.svg'
-import LogoProexca from '@/images/clients/proexca/logo-proexca-full.svg'
+import LogoChacon from '@/images/clients/more-clients/chacon.svg'
+import LogoChibusque from '@/images/clients/more-clients/chibusque.svg'
+import LogoDrar from '@/images/clients/more-clients/drar.svg'
+import LogoIon from '@/images/clients/more-clients/ion.svg'
+import LogoSaborea from '@/images/clients/more-clients/saborea1.svg'
+import LogoSunteco from '@/images/clients/more-clients/sunteco1.svg'
 import { formatDate } from '@/lib/formatDate'
 import { loadCaseStudies } from '@/lib/mdx'
 import logoTaboire from '@/images/logo/logo.png'
@@ -33,12 +38,12 @@ function CaseStudies({ caseStudies }) {
               <Border className="grid grid-cols-3 gap-x-8 gap-y-8 pt-16">
                 <div className="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
                   <div className="sm:flex sm:items-center sm:gap-x-6 lg:block">
-                    {/* <Image
+                    <Image
                       src={caseStudy.logo}
                       alt=""
                       className="h-16 w-16 flex-none"
                       unoptimized
-                    /> */}
+                    />
                     <h3 className="mt-6 font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
                       {caseStudy.client}
                     </h3>
@@ -93,16 +98,21 @@ const clients = [
   ['Logo Jardin Botanico', LogoJardinBotanico],
   ['Logo Effiwaste', LogoEffiwaste],
   ['Logo Arrecife Natura', LogoArrecifeNatura],
-  ['Logo Proexca', LogoProexca],
-  ['Logo Canarias', LogoCanarias],
-]
+  ['Logo Chacon', LogoChacon],
+  ['Logo Chibusque', LogoChibusque],
+  ['Logo Drar', LogoDrar],
+  ['Logo Ion', LogoIon],
+  ['Logo Saborea', LogoSaborea],
+  ['Logo Sunteco', LogoSunteco],
+  ['Logo Canarias', LogoCanarias]
+];
 
-function Clients() {
+export function Clients() {
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          Nuestros patrocinadores
+          Colaboran con Nosotros
         </h2>
       </FadeIn>
       <FadeInStagger className="mt-10" faster>
@@ -142,7 +152,7 @@ export default async function Work() {
         title="Proyectos de Sostenibilidad e Innovación Social"
       >
         <p>
-          Descubre nuestros proyectos sostenibles que transforman residuos en recursos, impulsan la economía circular y promueven la inclusión social. Diseñamos e implementamos iniciativas ambientales, educativas y territoriales con impacto local. A través de la colaboración con entidades públicas, privadas generamos soluciones creativas, regenerativas y replicables
+           Diseñamos e implementamos iniciativas ambientales, educativas y territoriales con impacto local. A través de la colaboración con entidades públicas, privadas generamos soluciones creativas, regenerativas y replicables
         </p>
       </PageIntro>
 
