@@ -7,7 +7,7 @@ import { List, ListItem } from '@/components/List'
 import { PageIntro } from '@/components/PageIntro'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import imageClients from '@/images/clients.jpg'
+import mainRoad from '@/images/2.jpg'
 import imageConsultoria from '@/images/consultoria.jpg'
 import imageTerritorio from '@/images/territorio.jpg'
 
@@ -80,7 +80,7 @@ function Eventos() {
   return (
     <Section
       title="Eventos sostenibles"
-      image={{ src: imageClients, shape: 0 }}
+      image={{ src: mainRoad, shape: 0 }}
     >
       <div className="space-y-6 text-base text-neutral-600">
         <p>

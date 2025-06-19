@@ -12,16 +12,15 @@ const navigation = [
     links: [
       { title: 'Sobre nosotros', href: '/about' },
       { title: 'Enfoques', href: '/process' },
-      { title: 'Blog', href: '/blog' },
-      { title: 'Contacto', href: '/contact' },
+      { title: 'Casos prácticos', href: '/work' },
+      { title: 'Contactos', href: '/contact' },
     ],
   },
   {
     title: 'Informaciones',
     links: [
-      { title: 'Pólitica de cookies', href: '/process' },
-      { title: 'Pólitica de privacidad', href: '/blog' },
-      { title: 'Derechos', href: '/contact' },
+      { title: 'Pólitica de privacidad', href: '/privacy' },
+      { title: 'Derechos', href: '/rights' },
     ],
   },
   {

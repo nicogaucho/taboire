@@ -17,7 +17,7 @@ export default async function CaseStudyLayout({ caseStudy, children }) {
     <>
       <article className="mt-24 sm:mt-32 lg:mt-40">
         <header>
-          <PageIntro eyebrow="Case Study" title={caseStudy.title} centered>
+          <PageIntro eyebrow="Caso práctico" title={caseStudy.title} centered>
             <p>{caseStudy.description}</p>
           </PageIntro>
 
@@ -27,11 +27,11 @@ export default async function CaseStudyLayout({ caseStudy, children }) {
                 <div className="mx-auto max-w-5xl">
                   <dl className="-mx-6 grid grid-cols-1 text-sm text-neutral-950 sm:mx-0 sm:grid-cols-3">
                     <div className="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
-                      <dt className="font-semibold">Client</dt>
+                      <dt className="font-semibold">Cliente</dt>
                       <dd>{caseStudy.client}</dd>
                     </div>
                     <div className="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
-                      <dt className="font-semibold">Year</dt>
+                      <dt className="font-semibold">Año</dt>
                       <dd>
                         <time dateTime={caseStudy.date.split('-')[0]}>
                           {caseStudy.date.split('-')[0]}
@@ -39,7 +39,7 @@ export default async function CaseStudyLayout({ caseStudy, children }) {
                       </dd>
                     </div>
                     <div className="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
-                      <dt className="font-semibold">Service</dt>
+                      <dt className="font-semibold">Servicio</dt>
                       <dd>{caseStudy.service}</dd>
                     </div>
                   </dl>
@@ -49,13 +49,13 @@ export default async function CaseStudyLayout({ caseStudy, children }) {
 
             <div className="border-y border-neutral-200 bg-neutral-100">
               <div className="mx-auto -my-px max-w-[76rem] bg-neutral-200">
-                {/* <GrayscaleTransitionImage
+                <GrayscaleTransitionImage
                   {...caseStudy.image}
                   quality={90}
                   className="w-full"
                   sizes="(min-width: 1216px) 76rem, 100vw"
                   priority
-                /> */}
+                />
               </div>
             </div>
           </FadeIn>
@@ -71,7 +71,7 @@ export default async function CaseStudyLayout({ caseStudy, children }) {
       {moreCaseStudies.length > 0 && (
         <PageLinks
           className="mt-24 sm:mt-32 lg:mt-40"
-          title="More case studies"
+          title="Más casos prácticos"
           pages={moreCaseStudies}
         />
       )}

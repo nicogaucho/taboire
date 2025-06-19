@@ -9,7 +9,7 @@ import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import { Button } from '@/components/Button'
 import logoTaboire from '@/images/logo/logo.png'
-import imageMeeting from '@/images/meeting.jpg'
+import sky from '@/images/sky.jpg'
 import logoInnavacion from '@/images/icons/sustainability.png'
 import logoAsesoramiento from '@/images/icons/consultoria.png'
 import logoFormacion from '@/images/icons/formacion.png'
@@ -132,7 +132,7 @@ function Services() {
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
-                src={imageMeeting}
+                src={sky}
                 sizes="(min-width: 1024px) 41rem, 31rem"
                 className="justify-center lg:justify-end"
               />
