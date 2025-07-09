@@ -9,10 +9,6 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
-import LogoCanarias from '@/images/clients/canarias/logo-gobierno-full.svg'
-import LogoEffiwaste from '@/images/clients/effiwaste/logo-effiwaste-full.svg'
-import LogoArrecifeNatura from '@/images/clients/logo-natura/logo-arrecife-full.svg'
-import LogoJardinBotanico from '@/images/clients/jardin-botanico/logo-botanico-full.svg'
 import LogoChacon from '@/images/clients/more-clients/chacon.svg'
 import LogoChibusque from '@/images/clients/more-clients/chibusque.svg'
 import LogoDrar from '@/images/clients/more-clients/drar.svg'
@@ -41,7 +37,7 @@ function CaseStudies({ caseStudies }) {
                     <Image
                       src={caseStudy.logo}
                       alt=""
-                      className="h-16 w-16 flex-none"
+                      className="h-20 w-20 flex-none"
                       unoptimized
                     />
                     <h3 className="mt-6 font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
@@ -95,16 +91,10 @@ function CaseStudies({ caseStudies }) {
 }
 
 const clients = [
-  ['Logo Jardin Botanico', LogoJardinBotanico],
-  ['Logo Effiwaste', LogoEffiwaste],
-  ['Logo Arrecife Natura', LogoArrecifeNatura],
   ['Logo Chacon', LogoChacon],
-  ['Logo Chibusque', LogoChibusque],
-  ['Logo Drar', LogoDrar],
   ['Logo Ion', LogoIon],
   ['Logo Saborea', LogoSaborea],
   ['Logo Sunteco', LogoSunteco],
-  ['Logo Canarias', LogoCanarias]
 ];
 
 export function Clients() {
@@ -112,7 +102,7 @@ export function Clients() {
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          Colaboran con Nosotros
+          Nuestros clientes
         </h2>
       </FadeIn>
       <FadeInStagger className="mt-10" faster>

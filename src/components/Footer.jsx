@@ -4,6 +4,7 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import logo from '@/images/logo/logo.png'
 import logoProexcaFull from "@/images/clients/proexca/logo-proexca-full.svg";
+import LogoCanarias from '@/images/clients/canarias/logo-gobierno-full.svg'
 import { socialMediaProfiles } from '@/components/SocialMedia'
 
 const navigation = [
@@ -116,7 +117,13 @@ export function Footer() {
               src={logoProexcaFull}
               width={280}
               className='ml-auto'
-            />  
+            />
+            <Image
+              alt=""
+              src={LogoCanarias}
+              width={250}
+              className='ml-auto mt-8'
+            />
           </div>
         </div>
         <div className="mt-24 mb-20 flex flex-wrap items-end  justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">

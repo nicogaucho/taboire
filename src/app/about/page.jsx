@@ -14,7 +14,45 @@ import { SectionIntro } from '@/components/SectionIntro'
 // import { StatList, StatListItem } from '@/components/StatList'
 import imagePaula from '@/images/team/paula.PNG'
 import imageCarlos from '@/images/team/Carlos.jpg'
-import { Clients } from '../work/page'
+import LogoCanarias from '@/images/clients/canarias/logo-gobierno-full.svg'
+import LogoEffiwaste from '@/images/clients/effiwaste/logo-effiwaste-full.svg'
+import LogoArrecifeNatura from '@/images/clients/logo-natura/logo-arrecife-full.svg'
+import LogoJardinBotanico from '@/images/clients/jardin-botanico/logo-botanico-full.svg'
+
+const clients = [
+  ['Logo Effiwaste', LogoEffiwaste],
+  ['Logo Arrecife Natura', LogoArrecifeNatura],
+  ['Logo Jardin Botanico', LogoJardinBotanico],
+];
+
+export function Clients() {
+  return (
+    <Container className="mt-24 sm:mt-32 lg:mt-40">
+      <FadeIn>
+        <h2 className="font-display text-2xl font-semibold text-neutral-950">
+          Colaboran con nosostros
+        </h2>
+      </FadeIn>
+      <FadeInStagger className="mt-10" faster>
+        <Border as={FadeIn} />
+        <ul
+          role="list"
+          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-3"
+        >
+          {clients.map(([client, logo]) => (
+            <li key={client} className="group">
+              <FadeIn className="overflow-hidden">
+                <Border className="pt-12 group-nth-[-n+2]:-mt-px sm:group-nth-3:-mt-px lg:group-nth-4:-mt-px">
+                  <Image src={logo} alt={client} unoptimizedn style={{ width: '300px', height: '130px' }} />
+                </Border>
+              </FadeIn>
+            </li>
+          ))}
+        </ul>
+      </FadeInStagger>
+    </Container>
+  )
+}
 
 
 function Culture() {
